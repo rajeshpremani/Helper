@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E36A07652A3B1CE300B35292 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A07642A3B1CE300B35292 /* Helper.swift */; };
+		E36A076D2A3B1E8200B35292 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A076C2A3B1E8200B35292 /* UIView+Extension.swift */; };
+		E36A076F2A3B1EBD00B35292 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A076E2A3B1EBD00B35292 /* String+Extension.swift */; };
+		E36A07712A3B27FB00B35292 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36A07702A3B27FB00B35292 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		E36A07612A3B1CE300B35292 /* libHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36A07642A3B1CE300B35292 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E36A076C2A3B1E8200B35292 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E36A076E2A3B1EBD00B35292 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E36A07702A3B27FB00B35292 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,20 @@
 		E36A07632A3B1CE300B35292 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E36A076B2A3B1E6400B35292 /* Extensions */,
 				E36A07642A3B1CE300B35292 /* Helper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		E36A076B2A3B1E6400B35292 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E36A076C2A3B1E8200B35292 /* UIView+Extension.swift */,
+				E36A076E2A3B1EBD00B35292 /* String+Extension.swift */,
+				E36A07702A3B27FB00B35292 /* UIButton+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E36A076D2A3B1E8200B35292 /* UIView+Extension.swift in Sources */,
+				E36A07712A3B27FB00B35292 /* UIButton+Extension.swift in Sources */,
+				E36A076F2A3B1EBD00B35292 /* String+Extension.swift in Sources */,
 				E36A07652A3B1CE300B35292 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
